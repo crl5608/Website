@@ -1,0 +1,196 @@
+header {
+	font-family: Arial;
+    background-color: #041E42;
+    padding: 20px;
+}
+
+body {
+	font-family: Arial;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+	color: #041E42;
+    margin: 0;
+}
+
+header h1 {
+    color: white;
+    font-size: 46px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin: 5px;
+    text-align: center;
+    text-decoration: underline;
+    color: #041E42;
+}
+
+header h2 {
+    font-size: 17px;
+    color: white;
+    text-align: left;
+    text-decoration: none;
+}
+
+h3 {
+	color: #041E42;
+}
+
+ul {
+    margin-top: 5px;
+    margin: 0;
+}
+
+.navbar-nav li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+li {
+    list-style-type: square;
+}
+
+p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.data {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    margin-right: 5px;
+    color: white;
+}
+
+.info {
+    color: white
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.contact-info p {
+    color: white;
+    margin: 5px 0;
+}
+
+.entry {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.entryedu {
+    display: flex;
+    align-items: flex-start;
+    background-color: white;
+    margin: 15px;
+    padding: 5px;
+}
+
+.entryexp {
+    margin: 10px;
+    padding: 5px;
+}
+
+.entryexp h3, .entryexp p {
+    display: inline;
+    vertical-align: top;
+    line-height: 28px;
+}
+
+.graduation-date {
+    align-self: flex-end;
+    margin-top: auto;
+}
+
+.education-details {
+    flex-grow: 1;
+}
+
+.entryedu h3 {
+    font-size: 20px;
+    margin: 10px;
+}
+
+.entryedu p {
+    margin-left: 20px;
+    font-style: italic;
+}
+
+.entry h3 {
+    margin-bottom: 10px;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.work {
+    display: flex;
+    align-items: center;
+    color: #041E42;
+}
+
+#work {
+    margin: 10px;
+    padding: 5px;
+}
+
+.jobrole{
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.jobdate {
+    font-weight: bold;
+    font-style: italic;
+    margin-left: 10px;
+}
+
+.corp {
+    font-size: 15px;
+    font-style: italic;
+    margin: 0px;
+    padding: 0px;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+}
+
+.social .icon {
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+}
+
+.social .icon a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+.fab {
+    color: #041E42;
+}

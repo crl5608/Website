@@ -1,0 +1,16 @@
+/* carousel.css */
+.carousel-item img {
+    width: 100%; /* Set a fixed width */
+    height: auto; /* Set a fixed height */
+    object-fit: cover; /* Ensure the image covers the entire container */
+}
+
+.card {
+    margin-bottom: 20px; /* Adjust the margin value as needed */
+}
+
+.card .btn {
+    background-color: #041E42; /* Set your desired background color */
+    border-color: #041E42; /* Set your desired border color */
+    color: #ffffff; /* Set your desired text color */
+}

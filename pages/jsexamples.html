@@ -30,6 +30,7 @@
         </ul>
     </div>
 </nav>
+<!-- Ride Height section -->
 <div class="main-container">
     <div class="top-box">
         <h2>Ride Height Calculator</h2>
@@ -38,38 +39,30 @@
             <form id="rideForm">
                 Input height in inches: <input type="number" id="userHeight" name="userHeight" required><br>
                 <input type="button" value="Check Ride Eligibility" onclick="rideHeight()">
-		    <script src="../js/rideheight.js"></script>
             </form>
             <p id="rideResult"></p>
-        </div>
-		
-		<hr>
-
-        <!-- Sum of Three Numbers section -->
-        <div class="section">
-            <h2>Sum of Three Numbers</h2>
-            <p>Enter a number in each field below to receive the sum of the three numbers.</p>
-            <form id="sumForm">
+</div>
+<hr>
+ <!-- Sum of Three Numbers section -->
+<div class="section">
+	<h2>Sum of Three Numbers</h2>
+		<p>Enter a number in each field below to receive the sum of the three numbers.</p>
+		<form id="sumForm">
                 Number 1: <input type="number" id="num1" name="num1" required><br>
                 Number 2: <input type="number" id="num2" name="num2" required><br>
                 Number 3: <input type="number" id="num3" name="num3" required><br>
                 <input type="button" value="Calculate Sum" onclick="sumThreeNumbers()">
-	<script src="../js/sumthree.js"></script>
-
-            </form>
+            	</form>
             <p id="sumResult"></p>
         </div>
     </div>            
-
-    <div class="bottom-box">
+<div class="bottom-box">
         <h2>Block Game</h2>
         <div id="scoreDisplay" style="font-family: Arial; font-size: 20px;"></div>
         <canvas id="canvas" width="640" height="480"></canvas>
         <button id="startButton">Start Game</button>
-        	<script src="../js/examples.js"></script>
     </div>
 </div>
-
 <!-- Modal for Game Over Message -->
 <div class="modal" id="gameOverModal">
     <div class="modal-content">
@@ -77,6 +70,7 @@
         <p id="gameOverMessage"></p>
     </div>
 </div>
+<script src="../js/examples.js"></script>
 <script src="../js/jquery-3.4.1.min.js"></script>
 <script src="../js/popper.min.js"></script>
 <script src="../js/bootstrap-4.4.1.js"></script>

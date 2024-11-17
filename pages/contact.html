@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me!</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/hf.css"> <!-- Header and Footer Styles -->
+    <link rel="stylesheet" href="../css/contactstyles.css"> <!-- Contact Form Styles -->
+</head>
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+        <!-- Branding -->
+        <a class="navbar-brand" href="../index.html">
+            Connor Leeuwen
+        </a>
+
+        <!-- Greeting (Hidden on smaller screens) -->
+        <div class="navbar-greeting d-none d-lg-block">
+            Please feel free to reach out!
+        </div>
+
+        <!-- Mobile Toggle Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar Links -->
+        <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/jsexamples.html">JavaScript Examples</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/resume.html">Resume</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="contact-form-container">
+    <h2 class="text-center">Contact Me</h2>
+    <form>
+        <div class="form-group">
+            <label for="exampleInputEmail1">Email Address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter your email">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputName">Name</label>
+            <input type="text" class="form-control" id="exampleInputName" placeholder="Enter your name">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputMessage">Message</label>
+            <textarea class="form-control" id="exampleInputMessage" rows="3" placeholder="Enter your message"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Submit</button>
+    </form>
+</div>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="footer-title">Cybersecurity Student & Aspiring IT/InfoSec Professional</p>
+            <h2>Connor Leeuwen</h2>
+            <p class="footer-description">
+                Junior at Pennsylvania State University studying Cybersecurity with a focus on law and policy. Gaining hands-on technical experience as a computer repair technician and preparing for a cybersecurity internship to bridge technical skills with legal and policy expertise.
+            </p>
+            <a href="../pages/contact.html" class="footer-contact-button">
+                Contact Me
+                <span class="arrow">→</span>
+            </a>
+        </div>
+        <div class="footer-links">
+            <a href="https://www.linkedin.com/in/connor-leeuwen-04503b283/" target="_blank" class="footer-link">LinkedIn</a>
+            <a href="https://github.com/crl5608" target="_blank" class="footer-link">GitHub</a>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>

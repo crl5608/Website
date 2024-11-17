@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap-4.4.1.css">
+    <link rel="stylesheet" href="../css/hf.css"> <!-- Header and Footer Styles -->
+    <link rel="stylesheet" href="../css/jsexamples.css"> <!-- JavaScript Examples Styles -->
+    <title>JavaScript Examples</title>
+</head>
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+        <!-- Branding -->
+        <a class="navbar-brand" href="../index.html">
+            Connor Leeuwen
+        </a>
+
+        <!-- Greeting (Hidden on smaller screens) -->
+        <div class="navbar-greeting d-none d-lg-block">
+            Welcome to My JavaScript Examples!
+        </div>
+
+        <!-- Mobile Toggle Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar Links -->
+        <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/jsexamples.html">JavaScript Examples</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/resume.html">Resume</a>
+                </li>
+            </ul>
+            <!-- Contact Button -->
+            <a class="btn btn-warning ml-3" href="../pages/contact.html">
+                Contact Me
+            </a>
+        </div>
+    </div>
+</nav>
+
+<!-- Main Content -->
+<div class="container" style="padding-top: 70px;">
+    <section id="js-examples">
+        <h2>JavaScript Examples</h2>
+        <p class="examples-description">
+            Explore practical JavaScript-based tools that showcase key programming concepts. These examples range from calculators to games, helping demonstrate the power of JavaScript in web applications.
+        </p>
+
+        <!-- Ride Height Calculator -->
+        <h3>Ride Height Calculator</h3>
+        <p>
+            A tool to check if you meet the height requirements for the "Tron Lightcycle Power Run" rollercoaster. Learn how user input is handled in JavaScript.
+        </p>
+        <div class="row">
+            <div class="col-md-6">
+                <form id="rideForm">
+                    <label for="userHeight">Enter your height in inches:</label>
+                    <input type="number" id="userHeight" name="userHeight" class="form-control" required>
+                    <button type="button" class="btn btn-primary mt-3" onclick="rideHeight()">Check Ride Eligibility</button>
+                </form>
+                <p id="rideResult" class="mt-2"></p>
+            </div>
+        </div>
+        <hr>
+
+        <!-- Sum of Three Numbers -->
+        <h3>Sum of Three Numbers</h3>
+        <p>
+            A simple calculator that demonstrates JavaScript's ability to perform real-time calculations based on user input.
+        </p>
+        <div class="row">
+            <div class="col-md-6">
+                <form id="sumForm">
+                    <div class="form-group">
+                        <label for="num1">Number 1:</label>
+                        <input type="number" id="num1" name="num1" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="num2">Number 2:</label>
+                        <input type="number" id="num2" name="num2" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="num3">Number 3:</label>
+                        <input type="number" id="num3" name="num3" class="form-control" required>
+                    </div>
+                    <button type="button" class="btn btn-primary mt-3" onclick="sumThreeNumbers()">Calculate Sum</button>
+                </form>
+                <p id="sumResult" class="mt-2"></p>
+            </div>
+        </div>
+        <hr>
+
+        <!-- Block Game -->
+        <h3>Block Game</h3>
+        <p>
+            An interactive game that demonstrates JavaScript's capabilities for animations and user interaction. Click below to start playing!
+        </p>
+        <div class="text-center">
+            <canvas id="canvas" width="640" height="480" style="border: 1px solid #ccc;"></canvas>
+            <p id="scoreDisplay" class="mt-3">Score: 0</p>
+            <button id="startButton" class="btn btn-success mt-3">Start Game</button>
+        </div>
+        <!-- Game Over Modal -->
+        <div id="gameOverModal" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: white; padding: 20px; border: 2px solid #ccc; z-index: 1000;">
+            <p id="gameOverMessage"></p>
+            <button onclick="closeGameOverModal()" class="btn btn-primary">Close</button>
+        </div>
+    </section>
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer-content">
+        <p class="footer-title">CYBERSECURITY STUDENT & ASPIRING IT/INFOSEC PROFESSIONAL</p>
+        <h2>Connor Leeuwen</h2>
+        <p class="footer-description">
+            Junior at Pennsylvania State University studying Cybersecurity with a focus on law and policy. Gaining hands-on technical experience as a computer repair technician and preparing for a cybersecurity internship to bridge technical skills with legal and policy expertise.
+        </p>
+        <a href="../pages/contact.html" class="footer-contact-button">
+            Contact Me
+            <span class="arrow">→</span>
+        </a>
+        <div class="footer-links">
+            <a href="https://www.linkedin.com/in/connor-leeuwen-04503b283/" target="_blank">LinkedIn</a>
+            <a href="https://github.com/crl5608" target="_blank">GitHub</a>
+        </div>
+    </div>
+</footer>
+
+<!-- Scripts -->
+<script src="../js/jquery-3.4.1.min.js"></script>
+<script src="../js/popper.min.js"></script>
+<script src="../js/bootstrap-4.4.1.js"></script>
+<script src="../js/sumthree.js"></script>
+<script src="../js/rideheight.js"></script>
+<script src="../js/game.js"></script>
+</body>
+</html>

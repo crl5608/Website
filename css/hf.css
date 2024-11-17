@@ -1,0 +1,116 @@
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    color: #333; /* Dark gray for readability */
+    background-color: #f9f9f9; /* Light background for contrast */
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #041E42; /* Navy blue */
+    padding: 10px 15px;
+    border-bottom: 3px solid #FFC107; /* Gold border under navbar */
+}
+
+.navbar-brand {
+    color: #FFC107 !important; /* Gold branding */
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+    color: #FFFFFF !important; /* White branding on hover */
+    text-decoration: none; /* No underline */
+}
+
+.navbar-greeting {
+    color: #FFFFFF; /* White text for greeting */
+    font-size: 1rem;
+    margin-left: 15px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #FFFFFF !important; /* White navbar links */
+    font-weight: bold; /* Bold text */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease; /* Smooth transition */
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #FFC107 !important; /* Gold on hover */
+    text-decoration: none; /* Remove underline */
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+    color: #FFC107 !important; /* Gold for active link */
+    font-weight: bold; /* Bold active link */
+}
+
+.navbar-toggler {
+    border-color: #FFC107; /* Gold border for toggler */
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 193, 7, 1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Footer Styling */
+.footer {
+    width: 100%; /* Full width for the background */
+    background-color: #041E42; /* Navy blue */
+    color: #ffffff; /* White text */
+    padding: 40px 0;
+}
+
+.footer-content {
+    max-width: 900px; /* Limit the width of the text */
+    margin: 0 auto; /* Center the content */
+    text-align: center; /* Center-align the text */
+}
+
+.footer-content h2 {
+    font-size: 1.8rem;
+    color: #FFC107; /* Gold for the name */
+    margin-bottom: 10px;
+}
+
+.footer-content p {
+    color: #f4f4f4; /* Slightly lighter white */
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.footer-contact-button {
+    display: inline-block;
+    background-color: #FFC107; /* Gold background */
+    color: #041E42; /* Navy Blue text */
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.footer-contact-button:hover {
+    background-color: #e0a806; /* Darker gold on hover */
+}
+
+.footer-links {
+    margin-top: 20px;
+}
+
+.footer-links a {
+    color: #FFC107; /* Gold links */
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #ffffff; /* White on hover */
+}

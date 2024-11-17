@@ -1,0 +1,169 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f9f9f9; /* Light background for readability */
+    margin: 0;
+}
+
+/* Main Container */
+.main-container {
+    max-width: 1200px;
+    margin: 0 auto; /* Center the content */
+    padding: 20px;
+}
+
+/* Section Headers */
+section h2 {
+    font-size: 2rem;
+    color: #041E42; /* Navy Blue */
+    border-bottom: 3px solid #FFC107; /* Gold underline */
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Education Section */
+.entryedu {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.education-details {
+    flex: 2;
+}
+
+.graduation-date {
+    flex: 1;
+    text-align: right;
+    color: #666; /* Subtle gray */
+}
+
+.work {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    gap: 2px; /* Reduce space between items */
+}
+
+.jobrole {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #041E42; /* Navy Blue */
+}
+
+.corp {
+    padding-left: 5px; /* Reduce left padding */
+    font-style: italic;
+    color: #666; /* Subtle gray color */
+    margin-top: -5px; /* Bring it closer to the job title */
+    display: inline-block; /* Align inline with job title */
+}
+
+.jobdate {
+    color: #999; /* Lighter gray for date */
+    text-align: right;
+    font-size: 0.9rem;
+}
+
+/* Lists */
+ul {
+    margin-left: 20px;
+    padding-left: 15px;
+}
+
+ul li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+/* Project Experience Section */
+.project {
+    margin-bottom: 30px;
+}
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.project-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #041E42; /* Navy Blue */
+}
+
+.project-date {
+    font-size: 0.9rem;
+    font-style: italic;
+    color: #999; /* Subtle date styling */
+}
+
+.project p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+/* Technical Skills Section */
+#skills h3 {
+    font-size: 1.2rem;
+    color: #041E42; /* Navy Blue */
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#skills p {
+    margin: 5px 0;
+    line-height: 1.6;
+}
+
+/* Awards Section */
+#awards ul {
+    list-style: disc;
+    margin-left: 20px;
+    padding-left: 15px;
+}
+
+#awards ul li {
+    margin-bottom: 10px;
+}
+
+/* Horizontal Rule Styling */
+hr {
+    border: 0;
+    height: 1px;
+    background: #ddd; /* Subtle gray line */
+    margin: 30px 0;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .entryedu {
+        flex-direction: column;
+    }
+
+    .graduation-date {
+        text-align: left;
+        margin-top: 10px;
+    }
+
+    .project-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .project-date {
+        margin-top: 5px;
+    }
+
+    .work {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .jobdate {
+        margin-top: 5px;
+        text-align: left;
+    }
+}

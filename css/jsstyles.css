@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+#js-examples h2 {
+    color: #041E42; /* Navy Blue */
+    border-bottom: 2px solid #FFC107;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+canvas {
+    display: block;
+    margin: 20px auto;
+    border: 1px solid #ddd;
+}
+
+#startButton {
+    background-color: #28a745;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+#startButton:hover {
+    background-color: #218838;
+}
+
+@media (max-width: 768px) {
+    canvas {
+        width: 100%;
+        height: auto;
+    }
+}

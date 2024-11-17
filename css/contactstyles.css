@@ -1,0 +1,84 @@
+/* Scoping all contact form styles under .contact-form-container */
+.contact-form-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff; /* White background for the form */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.contact-form-container h2 {
+    font-size: 1.8rem;
+    color: #041E42; /* Navy Blue */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-form-container form {
+    margin-top: 20px;
+}
+
+.contact-form-container label {
+    font-weight: bold;
+    color: #041E42; /* Navy Blue */
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-form-container input[type="email"],
+.contact-form-container input[type="text"],
+.contact-form-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 4px;
+    font-size: 1rem;
+    color: #333;
+    background-color: #fdfdfd; /* Light background for inputs */
+    transition: border-color 0.3s ease;
+}
+
+.contact-form-container input[type="email"]:focus,
+.contact-form-container input[type="text"]:focus,
+.contact-form-container textarea:focus {
+    border-color: #041E42; /* Navy Blue */
+    outline: none;
+    box-shadow: 0 0 5px rgba(4, 30, 66, 0.5); /* Subtle shadow */
+}
+
+.contact-form-container textarea {
+    resize: none; /* Disable resizing */
+}
+
+.contact-form-container button[type="submit"] {
+    background-color: #041E42; /* Navy Blue */
+    color: #ffffff; /* White text */
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 100%; /* Full-width button */
+}
+
+.contact-form-container button[type="submit"]:hover {
+    background-color: #FFC107; /* Gold */
+    color: #041E42; /* Navy Blue text */
+    transform: scale(1.05); /* Slightly larger on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-form-container {
+        margin: 20px;
+        padding: 15px;
+    }
+
+    .contact-form-container h2 {
+        font-size: 1.5rem;
+    }
+}

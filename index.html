@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap-4.4.1.css">
+    <link rel="stylesheet" href="css/hf.css"> <!-- Header and Footer Styles -->
+    <link rel="stylesheet" href="css/indexstyles.css"> <!-- Index-Specific Styles -->
+    <title>Home</title>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+        <!-- Branding -->
+        <a class="navbar-brand" href="../index.html">
+            Connor Leeuwen
+        </a>
+
+        <!-- Greeting (Hidden on smaller screens) -->
+        <div class="navbar-greeting d-none d-lg-block">
+            Welcome to My Portfolio!
+        </div>
+
+        <!-- Mobile Toggle Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar Links -->
+        <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/jsexamples.html">JavaScript Examples</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/resume.html">Resume</a>
+                </li>
+            </ul>
+            <!-- Contact Button -->
+            <a class="btn btn-warning ml-3" href="../pages/contact.html">
+                Contact Me
+            </a>
+        </div>
+    </div>
+</nav>
+
+
+<!-- Carousel -->
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="images/htmlimg.jpg" class="d-block w-100" alt="HTML">
+        </div>
+        <div class="carousel-item">
+            <img src="images/cssimg.jpg" class="d-block w-100" alt="CSS">
+        </div>
+        <div class="carousel-item">
+            <img src="images/jsimg.jpg" class="d-block w-100" alt="JavaScript">
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+
+<!-- Cards -->
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">JavaScript Examples</h5>
+                    <p class="card-text">Explore JavaScript examples, including a ride height calculator, a calculator that displays the sum of three numbers, and a block game.</p>
+                    <a href="pages/jsexamples.html" class="btn btn-primary">Go to JS Examples</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Resume</h5>
+                    <p class="card-text">View my resume to learn more about my skills and experience.</p>
+                    <a href="pages/resume.html" class="btn btn-primary">View Resume</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Contact</h5>
+                    <p class="card-text">Get in touch with me through the contact page.</p>
+                    <a href="pages/contact.html" class="btn btn-primary">Contact Me</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="footer">
+    <div class="footer-content">
+        <p class="footer-title">CYBERSECURITY STUDENT & ASPIRING IT/INFOSEC PROFESSIONAL</p>
+        <h2>Connor Leeuwen</h2>
+        <p class="footer-description">
+            Junior at Pennsylvania State University studying Cybersecurity with a focus on law and policy. Gaining hands-on technical experience as a computer repair technician and preparing for a cybersecurity internship to bridge technical skills with legal and policy expertise.
+        </p>
+        <a href="../pages/contact.html" class="footer-contact-button">
+            Contact Me <span class="arrow">→</span>
+        </a>
+        <div class="footer-links">
+            <a href="https://www.linkedin.com/in/connor-leeuwen-04503b283/" target="_blank">LinkedIn</a>
+            <a href="https://github.com/crl5608" target="_blank">GitHub</a>
+        </div>
+    </div>
+</footer>
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap-4.4.1.js"></script>
+</body>
+</html>
